@@ -19,10 +19,10 @@
         </commentGenerator>-->
 
         <!--2.加载连接数据库信息  -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/miaosha"
                         userId="root"
-                        password="123456" />
+                        password="12345678" />
 
         <!--3.生成DataObject类存放位置 -->
         <javaModelGenerator targetPackage="com.miaoshaproject.dataobject"
@@ -46,11 +46,31 @@
         </javaClientGenerator>
 
         <!--6. 我要生成的表  可以一次性生成多张表 tableName是表名   domainObjectName是实体名 -->
-        <table tableName="user_info" domainObjectName="UserDO"
+        <!--<table tableName="user_info" domainObjectName="UserDO"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false" />
         <table tableName="user_password" domainObjectName="UserPasswordDO"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" />
+        <table tableName="item" domainObjectName="ItemDO"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" />
+        <table tableName="item_stock" domainObjectName="ItemStockDO"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" />
+        <table tableName="order_info" domainObjectName="OrderInfoDO"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" />
+        <table tableName="sequence_info" domainObjectName="SequenceDO"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" />-->
+        <table tableName="promo" domainObjectName="PromoDO"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false" />
